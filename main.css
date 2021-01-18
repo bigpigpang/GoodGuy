@@ -1,0 +1,77 @@
+#container {
+    border: 1px solid cyan;
+    overflow: hidden;
+}
+
+.body {
+    width: 200px;
+    height: 180px;
+    background: url("./img/hg.png") ;
+    animation: step 1s steps(8) infinite;
+    float: left;
+    -webkit-animation: step 1s steps(8) infinite;
+}
+
+@keyframes step {
+    from {
+        background-position: 0px;
+    }
+
+    to {
+        background-position: -1600px;
+    }
+
+}
+
+.body1 {
+    width: 170px;
+    height: 240px;
+    float: left;
+    animation:move 1s steps(8) infinite;
+    -webkit-animation:move 1s steps(8) infinite;
+    background: url("./img/sf.png");
+    -webkit-animation: move 1s steps(8) infinite;
+}
+
+@keyframes move {
+    from {
+        background-position: 0px;
+    }
+
+    to {
+        background-position: -1360px;
+    }
+}
+
+.body2{
+    width: 200px;
+    height: 180px;
+    background: url("./img//bj.png");
+    animation:move1 1s steps(8) infinite ;
+    -webkit-animation:move1 1s steps(8) infinite ;
+    float: left;
+}
+@keyframes move1{
+    form{
+    background-position: 0px;
+    }
+    to{
+        background-position: -1600px;
+    }
+}
+.body3{
+    width: 210px;
+    height: 200px;
+    animation:move3 1s steps(8)infinite ;
+    float: left;
+    -webkit-animation:move3 1s steps(8)infinite ;
+    background: url("./img/ssd.png");
+}
+@keyframes move3{
+    from{
+        background-position: 0px;
+    }
+    to{
+        background-position: -1680px;   
+    }
+}
